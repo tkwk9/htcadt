@@ -1,0 +1,10 @@
+// TODO: Maybe this should just be a css?
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    font-family: "Courier New", Courier, monospace;
+  }
+}

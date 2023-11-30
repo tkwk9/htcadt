@@ -1,0 +1,22 @@
+
+dist
+.solid
+.output
+.wrangler
+
+# Environment
+.env
+.env*.local
+
+# dependencies
+/node_modules
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Cloudflare Auto Generated Edge Functions
+/functions/\[\[path\]\].js
+
+# Custom
+.archives

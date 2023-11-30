@@ -1,0 +1,33 @@
+{
+  "name": "htcad",
+  "scripts": {
+    "dev": "bash run_dev.sh",
+    "ss:watch": "[ -f functions/[[path]].js ] && rm functions/[[path]].js; solid-start dev",
+    "ss:build": "solid-start build",
+    "ss:start": "solid-start start",
+    "pages:dev": "wrangler pages dev --kv KV_TEST --proxy 3000",
+    "pages:deploy": "npm run ss:build && wrangler pages deploy ./dist/public",
+    "nuke": "[ -f functions/[[path]].js ] && rm functions/[[path]].js; rm -rf .solid && rm -rf dist && rm -rf node_modules"
+  },
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "esbuild": "^0.14.54",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "solid-start-cloudflare-pages": "^0.3.10",
+    "solid-start-node": "^0.3.10",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.9",
+    "wrangler": "^3.15.0"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.29.1",
+    "@solidjs/router": "^0.8.3",
+    "solid-js": "^1.8.5",
+    "solid-start": "^0.3.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
