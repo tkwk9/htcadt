@@ -25,18 +25,20 @@ const Root = () => {
       <Body>
         <Suspense>
           <ErrorBoundary>
-            <A
-              class="inline-block font-normal text-blue-950 dark:text-blue-600 hover:underline ml-4 my-1"
-              href="/"
-            >
-              Index
-            </A>
-            <A
-              class="inline-block font-normal text-blue-950 dark:text-blue-600 hover:underline ml-4 my-1"
-              href="/xyz"
-            >
-              XYZ
-            </A>
+            <div class="fixed top-0 left-0 bg-blue-400 bg-opacity-50 w-full">
+              <A
+                class="inline-block font-normal text-blue-950 dark:text-blue-600 hover:underline ml-4 my-1"
+                href="/"
+              >
+                Index
+              </A>
+              <A
+                class="inline-block font-normal text-blue-950 dark:text-blue-600 hover:underline ml-4 my-1"
+                href="/xyz"
+              >
+                XYZ
+              </A>
+            </div>
             <Routes>
               <FileRoutes />
             </Routes>
