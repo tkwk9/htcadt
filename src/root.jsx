@@ -22,7 +22,7 @@ const Root = () => {
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Body>
+      <Body class="bg-[url('/background.png')]">
         <Suspense>
           <ErrorBoundary>
             <div class="fixed top-0 left-0 bg-blue-400 bg-opacity-50 w-full">
